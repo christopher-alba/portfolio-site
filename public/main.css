@@ -1,0 +1,149 @@
+/* GENERAL STYLES BEGIN */
+body {
+	margin: 0;
+}
+.main {
+	overflow-x: hidden;
+	height: 100vh;
+	background: #219793;
+}
+#app {
+	height: 100vh;
+}
+.whitespace:before {
+	content: '';
+	height: 300px;
+	width: 130vw;
+	background: white;
+	position: absolute;
+	top: -150px;
+	left: 0px;
+	bottom: 0px;
+	transform: rotate(-6deg);
+	z-index: 0;
+	border: none;
+	z-index: -1;
+}
+
+.whitespace {
+	position: relative;
+	z-index: 1;
+	background: white;
+	min-height: 30vh;
+}
+.whitespace:after {
+	content: '';
+	height: 300px;
+	width: 130vw;
+	background: white;
+	position: absolute;
+	bottom: 150px;
+	left: 0px;
+	top: 150px;
+	transform: rotate(6deg);
+	z-index: 0;
+	border: none;
+	z-index: -1;
+}
+.whitespace .gears {
+	position: absolute;
+	left: 100px;
+	top: -100px;
+}
+@media (max-width: 500px) {
+	.whitespace:before {
+		background-size: 150px 150px;
+		height: 130px;
+		display: inline-flex;
+	}
+}
+/* GENERAL STYLES END */
+/* NAVBAR STYLES START */
+.navbar {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+}
+/* NAVBAR STYLES END */
+/* HEADER STYLES BEGIN */
+.header {
+	height: 70vh;
+	width: 100vw;
+	background-image: url(./images/man-laptop.png);
+	background-repeat: no-repeat;
+	background-position-x: 80%;
+	background-position-y: -100%;
+}
+
+.header-text {
+	position: relative;
+	top: 30%;
+	left: 15%;
+}
+.header-text .name {
+	color: #ffdd00;
+	font-weight: 650;
+	font-size: 3.5rem;
+	margin-bottom: 10px;
+	font-family: 'Segoe UI' !important;
+}
+.header-text h5 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: 800;
+}
+.header-text .profession {
+	font-style: italic;
+	font-size: 1.5rem;
+}
+
+.header-text .welcome {
+	font-size: 1.3rem;
+	color: white;
+}
+@media (max-width: 500px) {
+	.header {
+		background-position-x: 80%;
+		background-position-y: 70%;
+		background-size: 100px auto;
+	}
+	.header-text {
+		top: 10%;
+		left: 15%;
+	}
+	.header-text .name {
+		color: #ffdd00;
+		font-weight: 650;
+		font-size: 2rem;
+		margin-bottom: 10px;
+		font-family: 'Segoe UI' !important;
+	}
+	.header-text h5 {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-weight: 800;
+	}
+	.header-text .profession {
+		font-style: italic;
+		font-size: 1rem;
+	}
+
+	.header-text .welcome {
+		font-size: 1rem;
+		color: white;
+	}
+}
+/* HEADER STYLES END */
+/* ABOUT STYLES BEGIN */
+.about-section {
+	position: relative;
+	left: 50%;
+	top: -50px;
+	width: 40%;
+}
+.carousel {
+	/* display: flex;
+	width: 400px;
+	height: 200px; */
+}
+/* ABOUT STYLES BEGIN */
