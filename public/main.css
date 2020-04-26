@@ -1,35 +1,55 @@
 /* GENERAL STYLES BEGIN */
 body {
 	margin: 0;
-}
-.main {
 	overflow-x: hidden;
+	background: #219793 !important;
+	transition: 500ms;
 	height: 100vh;
-	background: #219793;
+}
+.div {
+	overflow-x: hidden;
 }
 #app {
-	height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
 }
 .whitespace:before {
 	content: '';
-	height: 300px;
+	height: 13%;
 	width: 130vw;
 	background: white;
 	position: absolute;
 	top: -150px;
 	left: 0px;
 	bottom: 0px;
-	transform: rotate(-6deg);
+	transform: rotate(-5deg);
 	z-index: 0;
 	border: none;
 	z-index: -1;
 }
-
-.whitespace {
+.footer:before {
+	content: '';
+	height: 80%;
+	width: 130vw;
+	background: white;
+	position: absolute;
+	top: -150px;
+	left: 0px;
+	bottom: 0px;
+	transform: rotate(-5deg);
+	z-index: 0;
+	border: none;
+	z-index: -1;
+}
+.whitespace,
+.footer {
 	position: relative;
 	z-index: 1;
 	background: white;
 	min-height: 30vh;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100vw;
 }
 .whitespace:after {
 	content: '';
@@ -37,25 +57,35 @@ body {
 	width: 130vw;
 	background: white;
 	position: absolute;
-	bottom: 150px;
+	bottom: 0;
 	left: 0px;
-	top: 150px;
+	top: 95%;
 	transform: rotate(6deg);
-	z-index: 0;
 	border: none;
 	z-index: -1;
 }
 .whitespace .gears {
 	position: absolute;
-	left: 100px;
-	top: -100px;
+	left: 10%;
+	top: -150px;
+	width: 20vw;
+	height: auto;
 }
-@media (max-width: 500px) {
-	.whitespace:before {
-		background-size: 150px 150px;
-		height: 130px;
-		display: inline-flex;
-	}
+.visible {
+	opacity: 1;
+	transition: 500ms;
+}
+
+.hidden {
+	opacity: 0.3;
+	transition: 500ms;
+}
+.hidden:hover {
+	cursor: default !important;
+}
+.container {
+	width: 75%;
+	margin: 0 auto 0 auto;
 }
 /* GENERAL STYLES END */
 /* NAVBAR STYLES START */
@@ -137,13 +167,140 @@ body {
 /* ABOUT STYLES BEGIN */
 .about-section {
 	position: relative;
-	left: 50%;
-	top: -50px;
-	width: 40%;
+	width: 30%;
+	right: -60%;
+	transition: 500ms;
 }
-.carousel {
-	/* display: flex;
-	width: 400px;
-	height: 200px; */
+@media (max-width: 1300px) {
+	.about-section {
+		width: 70%;
+		right: 0;
+		margin: 0 auto 0 auto;
+	}
 }
-/* ABOUT STYLES BEGIN */
+.about-section h1 {
+	text-align: center;
+	color: #219793;
+	font-weight: 700;
+	font-family: 'Segoe UI' !important;
+}
+.carousel-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(fit-content + 100px);
+	transition: 500ms;
+}
+.carousel .arrows {
+	font-size: 2rem;
+}
+.carousel-main p {
+	padding-left: 50px;
+	padding-right: 50px;
+	transition: 500ms;
+	height: 150px;
+	overflow-y: auto;
+}
+.carousel .arrows:hover {
+	cursor: pointer;
+}
+.carousel-index {
+	text-align: center;
+}
+.carousel-index:hover {
+	cursor: pointer;
+}
+.carousel .fab.fa-react {
+	margin-right: 20px;
+	font-size: 1.5rem;
+	color: #ffdd00;
+}
+.carousel .fab.fa-react.hidden:hover {
+	cursor: pointer !important;
+}
+/* ABOUT STYLES END*/
+/* PERSONAL STYLES BEGIN */
+.personal {
+	margin-top: 10%;
+	min-height: 30vh;
+	overflow-x: hidden;
+}
+.personal h1 {
+	text-align: left;
+	color: #219793;
+	font-weight: 700;
+	font-family: 'Segoe UI' !important;
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+.gallery-item {
+	width: 450px;
+	min-width: 300px;
+	max-width: 1000px;
+	margin-left: 0;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.gallery-item-img {
+	max-width: 100%;
+}
+.gallery-item-img img {
+	width: 100%;
+	border: 1px solid white;
+}
+.gallery-item-title,
+.gallery-item-description,
+.gallery-item-tags {
+	padding-top: 20px;
+}
+.gallery-item-title {
+	font-size: 2rem;
+	font-weight: 700;
+	font-family: 'Segoe UI' !important;
+	display: flex;
+}
+.gallery-item-title a {
+	margin-left: auto;
+}
+.gallery-item-tags {
+	display: flex;
+}
+.gallery-item-tag {
+	margin-right: 20px;
+	font-weight: 800;
+	font-family: 'Segoe UI' !important;
+}
+.personal .ui.button {
+	background: white;
+	border: 1px solid lightgray;
+}
+.group .ui.button {
+	background: #219793;
+	color: #6ecfcc;
+	border: 1px solid #6ecfcc;
+}
+/* PERSONAL STYLES END */
+/* GROUP STYLES BEGIN */
+.group {
+	padding-top: 30%;
+	padding-bottom: 30%;
+	color: #ffffff;
+	position: relative;
+	top: 0px;
+}
+.group h1 {
+	text-align: left;
+
+	font-weight: 700;
+	font-family: 'Segoe UI' !important;
+}
+.group-silhouette {
+	position: absolute;
+	top: -3%;
+	z-index: 1;
+	right: 0;
+}
+/* GROUP STYLES END */

@@ -7,7 +7,7 @@ import Footer from './Footer'
 import Header from './Header'
 const App = () => {
 	return (
-		<div className='main'>
+		<>
 			<Navbar />
 			<Header />
 
@@ -22,7 +22,7 @@ const App = () => {
 			</div>
 
 			<Footer />
-		</div>
+		</>
 	)
 }
 
