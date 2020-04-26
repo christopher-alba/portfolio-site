@@ -76,6 +76,30 @@ let personalProjects = [
 			'Desktop',
 		],
 	},
+	{
+		title: 'Small Scale E-Commerce Site',
+		imgUrl: './images/janzart.png',
+		description: `This is a long term project of mine and is far from completed. It is a website for selling products that my mother will design and create in the future and is part of a collection of other business websites for her. All the data inside the postgreSQL database is just seed data and the payment system is running in test mode so no real payments can be processed, only tested. I use this website as a testing ground for new technologies I want to implement in the final versions of her websites and to test them. Enjoy your visit ❤.`,
+		href: `https://janzart.herokuapp.com/#/`,
+		tags: [
+			'HTML',
+			'CSS',
+			'Javascript',
+			'Node.js',
+			'Express.js',
+			'PostgreSQL',
+			'SQL3',
+			'Knex.js',
+			'React.js',
+			'React-Redux',
+			'Semantic-UI-React',
+			'Stripe',
+			'Other React npm Libraries',
+			'Desktop',
+			'Mobile',
+			'eCommerce',
+		],
+	},
 ]
 class Personal extends Component {
 	render() {
