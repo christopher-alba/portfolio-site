@@ -225,7 +225,7 @@ body {
 /* PERSONAL STYLES BEGIN */
 .personal {
 	margin-top: 10%;
-	min-height: 30vh;
+	min-height: 120vh;
 	overflow-x: hidden;
 }
 .personal h1 {
@@ -245,16 +245,20 @@ body {
 .gallery-item {
 	width: 450px;
 	min-width: 250px;
-	max-width: 1000px;
+	max-width: 450px;
 	margin-left: 0;
-	margin-right: auto;
+	margin-right: 20px;
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
 .gallery-item-img {
 	max-width: 100%;
 }
-.gallery-item-img img {
+.personal .gallery-item-img img {
+	width: 100%;
+	border: 1px solid rgb(0, 0, 0);
+}
+.group .gallery-item-img img {
 	width: 100%;
 	border: 1px solid white;
 }
@@ -274,6 +278,7 @@ body {
 }
 .gallery-item-tags {
 	display: flex;
+	flex-wrap: wrap;
 }
 .gallery-item-tag {
 	margin-right: 20px;
