@@ -19,7 +19,7 @@ class Group extends Component {
 										<img src='/images/meditation.jpg' alt='' />
 									</div>
 									<div className='gallery-item-title'>
-										<h1>Meditation</h1>
+										<h2>Meditation</h2>
 										<Link to='/'>
 											<button className='ui button '>visit</button>
 										</Link>

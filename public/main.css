@@ -137,7 +137,7 @@ body {
 	.header {
 		background-position-x: 80%;
 		background-position-y: 70%;
-		background-size: 100px auto;
+		background-size: 100px auto, cover;
 	}
 	.header-text {
 		top: 10%;
@@ -233,6 +233,10 @@ body {
 	color: #219793;
 	font-weight: 700;
 	font-family: 'Segoe UI' !important;
+	font-size: 2.5rem;
+	background: white;
+	position: sticky;
+	top: 0px;
 }
 .gallery {
 	display: flex;
@@ -296,9 +300,12 @@ body {
 }
 .group h1 {
 	text-align: left;
-
+	font-size: 2.5rem;
 	font-weight: 700;
 	font-family: 'Segoe UI' !important;
+	background: #219793;
+	position: sticky;
+	top: 0px;
 }
 .group-silhouette {
 	position: absolute;
@@ -307,3 +314,61 @@ body {
 	right: 0;
 }
 /* GROUP STYLES END */
+/* FOOTER STYLES BEGIN */
+.footer-info {
+	display: flex;
+	margin-left: auto;
+	margin-right: 50px;
+	width: fit-content;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+.footer-info i {
+	font-size: 5rem;
+	padding: 20px;
+
+	color: white;
+}
+.footer-info .icon {
+	background: black;
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-left: 50px;
+}
+.footer-info .text {
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+}
+.contacts {
+	position: relative;
+	top: -100px;
+}
+.programmer {
+	position: absolute;
+	left: 100px;
+	bottom: 0px;
+}
+.contact-me {
+	position: absolute;
+	left: 100px;
+	bottom: 200px;
+}
+.credit {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	font-family: 'Segoe UI' !important;
+	color: #219793;
+}
+/* FOOTER STYLES END */
