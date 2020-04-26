@@ -12,7 +12,7 @@ const App = () => {
 			<Header />
 
 			<div className='whitespace'>
-				<img className='gears' src='/images/gears-icon.png' alt='' />
+				<img className='gears' src='/images/settings-gears.png' alt='' />
 				<About />
 				<Personal />
 			</div>

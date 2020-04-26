@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+let personalProjects = []
 class Personal extends Component {
 	render() {
 		return (
