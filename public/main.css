@@ -3,14 +3,13 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 	background: #219793 !important;
-	transition: 500ms;
 	height: 100vh;
 }
 .div {
 	overflow-x: hidden;
 }
 #app {
-	width: 100vw;
+	width: 100%;
 	overflow-x: hidden;
 }
 .whitespace:before {
@@ -92,21 +91,61 @@ body {
 .navbar {
 	position: fixed;
 	top: 0px;
-	right: 0px;
+	left: 0px;
+	font-size: 3rem;
+	color: white;
+	z-index: 2;
+}
+.navbar > div {
+	height: 100px;
+	width: 100px;
+	background: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 30px;
+	margin-top: 20px;
+	border-radius: 50%;
+	transition: 500ms;
+}
+.nav-link-active {
+	position: relative;
+	top: 0px;
+	opacity: 1;
+}
+.nav-link-inactive {
+	position: relative;
+	top: -120px;
+	z-index: -1;
+	opacity: 0;
+}
+.navbar > div:hover {
+	cursor: pointer;
+}
+.toggler:hover,
+.toggler-active {
+	color: #ffdd00;
+}
+.current-location {
+	color: #fde475;
 }
 /* NAVBAR STYLES END */
 /* HEADER STYLES BEGIN */
 .header {
 	height: 70vh;
-	width: 100vw;
-	background-image: url(./images/man-laptop.png),
-		url(./images/meditation-header.png);
+	width: 100%;
+	background-image: url(./images/meditation-header.png);
 	background-repeat: no-repeat;
-	background-position-x: 80%, 0;
-	background-position-y: -100%, 0;
-	background-size: auto, cover;
+	background-position-x: 0;
+	background-position-y: 0;
+	background-size: cover;
 }
-
+.laptop-man {
+	position: absolute;
+	right: 20%;
+	bottom: 300px;
+	height: 60%;
+}
 .header-text {
 	position: relative;
 	top: 30%;
@@ -171,8 +210,8 @@ body {
 	position: relative;
 	width: 30%;
 	right: -60%;
-	transition: 500ms;
 	top: -100px;
+	margin-bottom: 100px;
 }
 @media (max-width: 1300px) {
 	.about-section {
@@ -224,8 +263,8 @@ body {
 /* ABOUT STYLES END*/
 /* PERSONAL STYLES BEGIN */
 .personal {
+	position: relative;
 	margin-top: 10%;
-	min-height: 120vh;
 	overflow-x: hidden;
 }
 .personal h1 {
@@ -235,8 +274,6 @@ body {
 	font-family: 'Segoe UI' !important;
 	font-size: 2.5rem;
 	background: white;
-	position: sticky;
-	top: 0px;
 }
 .gallery {
 	display: flex;
