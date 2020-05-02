@@ -83,7 +83,7 @@ let personalProjects = [
   {
     title: 'Small Scale E-Commerce Site',
     imgUrl: './images/janzart.png',
-    description: `This is a long term project of mine and is still a work in progress. It is an e-commerce website and all the data inside the postgreSQL database is just seed data.The payment system is running in test mode so no real payments can be processed, only tested. Enjoy your visit ❤.`,
+    description: `This is a long term project of mine that I began during week 5 of the EDA bootcamp for my personal project presentation in week 7 and is still a work in progress. It is an e-commerce website and all the data inside the postgreSQL database is just seed data.The payment system is running in test mode so no real payments can be processed, only tested. Enjoy your visit ❤.`,
     href: `https://janzart.herokuapp.com/#/`,
     tags: [
       'HTML',
