@@ -122,54 +122,57 @@ render () {
   return (
   // <div>Testing Hello</div>
   // className='personal container's
-    <div className='personal container' style={this.props.styles}>
-      <h1>MY PERSONAL PROJECTS</h1>
-      <div className='gallery'>
-        {personalProjects.map(project => {
-          return (
-            <VisibilitySensor key={project.title}partialVisibility={false}>
-              {
-                <Spring
-                  config={{ duration: 100 }}
-                  from={{
-                    opacity: 0,
-                    transform: 'translateY(300px)'
-                  }}
-                  to={{
-                    opacity: 1,
-                    transform: 'translateY(0)'
-                  }}>
-                  {props => {
-                    return (
-                      <div className='gallery-item' style={props}>
-                        <div className='gallery-item-img'>
-                          <img src={project.imgUrl} alt='' />
+    <div className='personal' style={this.props.styles}>
+      <div className='container'>
+        <h1>MY PERSONAL PROJECTS</h1>
+        <div className='gallery'>
+          {personalProjects.map(project => {
+            return (
+              <VisibilitySensor key={project.title}partialVisibility={false}>
+                {
+                  <Spring
+                    config={{ duration: 100 }}
+                    from={{
+                      opacity: 0,
+                      transform: 'translateY(300px)'
+                    }}
+                    to={{
+                      opacity: 1,
+                      transform: 'translateY(0)'
+                    }}>
+                    {props => {
+                      return (
+                        <div className='gallery-item' style={props}>
+                          <div className='gallery-item-img'>
+                            <img src={project.imgUrl} alt='' />
+                          </div>
+                          <div className='gallery-item-title'>
+                            <h2>{project.title}</h2>
+                            <a href={project.href} target='_blank' rel="noopener noreferrer" >
+                              <button className='ui button'>visit</button>
+                            </a>
+                          </div>
+                          <div className='gallery-item-description'>
+                            {project.description}
+                          </div>
+                          <div className='gallery-item-tags'>
+                            {project.tags.map(tag => {
+                              return (
+                                <div className='gallery-item-tag'>#{tag}</div>
+                              )
+                            })}
+                          </div>
                         </div>
-                        <div className='gallery-item-title'>
-                          <h2>{project.title}</h2>
-                          <a href={project.href} target='_blank' rel="noopener noreferrer" >
-                            <button className='ui button'>visit</button>
-                          </a>
-                        </div>
-                        <div className='gallery-item-description'>
-                          {project.description}
-                        </div>
-                        <div className='gallery-item-tags'>
-                          {project.tags.map(tag => {
-                            return (
-                              <div className='gallery-item-tag'>#{tag}</div>
-                            )
-                          })}
-                        </div>
-                      </div>
-                    )
-                  }}
-                </Spring>
-              }
-            </VisibilitySensor>
-          )
-        })}
+                      )
+                    }}
+                  </Spring>
+                }
+              </VisibilitySensor>
+            )
+          })}
+        </div>
       </div>
+
     </div>
   )
 }

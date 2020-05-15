@@ -92,13 +92,13 @@ body {
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	font-size: 3rem;
+	font-size: 1.5rem;
 	color: white;
 	z-index: 2;
 }
 .navbar > div {
-	height: 100px;
-	width: 100px;
+	height: 50px;
+	width: 50px;
 	background: black;
 	display: flex;
 	align-items: center;
@@ -212,6 +212,7 @@ body {
 	right: -60%;
 	top: -100px;
 	margin-bottom: 100px;
+
 }
 @media (max-width: 1300px) {
 	.about-section {
@@ -240,7 +241,9 @@ body {
 	padding-left: 50px;
 	padding-right: 50px;
 	transition: 500ms;
-	height: 150px;
+	height: 160px;
+	display: flex;
+	align-items: center;
 	overflow-y: auto;
 }
 .carousel .arrows:hover {
@@ -278,9 +281,10 @@ body {
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
+	width:
 }
 .gallery-item {
-	width: 450px;
+	width: 350px;
 	min-width: 250px;
 	max-width: 450px;
 	margin-left: 0;
