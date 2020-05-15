@@ -124,10 +124,10 @@ body {
 }
 .toggler:hover,
 .toggler-active {
-	color: #ffdd00;
+	color: #3cbe9e;
 }
 .current-location {
-	color: #fde475;
+	color: #3cbe9e;
 }
 /* NAVBAR STYLES END */
 /* HEADER STYLES BEGIN */
