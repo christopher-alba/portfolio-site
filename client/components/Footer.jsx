@@ -43,7 +43,7 @@ class Footer extends Component {
 	            <div className='text'>
 	              <a
 	                href='https://github.com/christopher-alba?tab=repositories'
-	                target='_blank'>
+	                target='_blank' rel="noopener noreferrer" >
 	                <button className='ui button yellow'>
 	                  <strong>VIEW MORE OF MY WORK ON GITHUB</strong>
 	                </button>

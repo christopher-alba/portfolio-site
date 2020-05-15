@@ -147,7 +147,7 @@ render () {
                         </div>
                         <div className='gallery-item-title'>
                           <h2>{project.title}</h2>
-                          <a href={project.href} target='_blank'>
+                          <a href={project.href} target='_blank' rel="noopener noreferrer" >
                             <button className='ui button'>visit</button>
                           </a>
                         </div>
