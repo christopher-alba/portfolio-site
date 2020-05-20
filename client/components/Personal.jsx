@@ -91,8 +91,6 @@ let personalProjects = [
       'Javascript',
       'Node.js',
       'Express.js',
-      'PostgreSQL',
-      'SQL3',
       'Knex.js',
       'React.js',
       'React-Redux',
