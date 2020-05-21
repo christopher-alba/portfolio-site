@@ -285,7 +285,6 @@ body {
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
-	width:
 }
 .gallery-item {
 	width: 350px;
