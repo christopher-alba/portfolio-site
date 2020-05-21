@@ -285,7 +285,6 @@ body {
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
-	width:fit-content;
 }
 .gallery-item {
 	width: 350px;
@@ -307,6 +306,7 @@ body {
 }
 .group .gallery-item-img img {
 	width: 100%;
+	height: 100%;
 	border: 1px solid white;
 }
 .gallery-item-title,
