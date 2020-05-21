@@ -285,15 +285,17 @@ body {
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
+	width:fit-content;
 }
 .gallery-item {
 	width: 350px;
 	min-width: 250px;
-	max-width: 450px;
+	max-width: 650px;
 	margin-left: 0;
 	margin-right: 20px;
 	margin-bottom: 20px;
 	margin-top: 20px;
+	flex-grow: 1;
 }
 .gallery-item-img {
 	max-width: 100%;
@@ -462,10 +464,6 @@ body {
 		display: none;
 	}
 
-	.gallery-item {
-		margin-top: 0px;
-		margin-right: 0px;
-	}
 
 
 	/* FOOTER MEDIA QUERIES BEGIN */
@@ -497,4 +495,12 @@ body {
 		top: 10%;
 	}
 	/* FOOTER MEDIA QUERIES END */
+}
+
+@media (max-width: 500px) {
+	.gallery-item {
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+
 }
