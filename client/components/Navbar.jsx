@@ -4,10 +4,27 @@ import { connect } from 'react-redux'
 class Navbar extends React.PureComponent {
 state = {
   display: false,
-  location: 'about'
+  location: 'about',
+  navDisplay: true
 }
-toggleNav = () => {
-  this.setState({ display: !this.state.display })
+toggleNav = (bool) => {
+  let display = !this.state.display
+  if (bool === true || bool === false) {
+    this.setState({ navDisplay: bool })
+  }
+  this.setState({ display })
+}
+componentDidMount () {
+  var prevScrollpos = window.pageYOffset
+  window.onscroll = () => {
+    var currentScrollPos = window.pageYOffset
+    if (prevScrollpos > currentScrollPos) {
+      this.toggleNav(true)
+    } else {
+      this.toggleNav(false)
+    }
+    prevScrollpos = currentScrollPos
+  }
 }
 componentDidUpdate (prevProps) {
 // console.log(prevProps)
@@ -25,7 +42,7 @@ handleClick = (evt, location) => {
 }
 render () {
   return (
-    <div className='navbar' style={this.props.styles}>
+    <div className={`navbar ${this.state.navDisplay ? `visibleNav` : `hiddenNav`}`} >
       <div
         className={`toggler ${this.state.display ? `toggler-active` : ``}`}
         onClick={this.toggleNav}>
