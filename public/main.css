@@ -18,7 +18,7 @@ body {
 	width: 130vw;
 	background: white;
 	position: absolute;
-	top: -150px;
+	top: -100px;
 	left: 0px;
 	bottom: 0px;
 	transform: rotate(-5deg);
@@ -86,6 +86,10 @@ body {
 	width: 75%;
 	margin: 0 auto 0 auto;
 }
+.containerInner {
+	width: fit-content;
+	margin: 0 auto 0 auto;
+}
 /* GENERAL STYLES END */
 /* NAVBAR STYLES START */
 .navbar {
@@ -143,13 +147,13 @@ body {
 .laptop-man {
 	position: absolute;
 	right: 20%;
-	bottom: 300px;
+	bottom: 250px;
 	height: 60%;
 }
 .header-text {
 	position: relative;
-	top: 30%;
-	left: 15%;
+	top:23%;
+	left:17%;
 }
 .header-text .name {
 	color: #ffdd00;
@@ -241,7 +245,7 @@ body {
 	padding-left: 50px;
 	padding-right: 50px;
 	transition: 500ms;
-	height: 160px;
+	height: 200px;
 	display: flex;
 	align-items: center;
 	overflow-y: auto;
@@ -297,6 +301,7 @@ body {
 }
 .personal .gallery-item-img img {
 	width: 100%;
+	height:100%;
 	border: 1px solid rgb(0, 0, 0);
 }
 .group .gallery-item-img img {
@@ -376,6 +381,7 @@ body {
 
 	color: white;
 }
+
 .footer-info .icon {
 	background: black;
 	border-radius: 50%;
@@ -402,11 +408,13 @@ body {
 	position: absolute;
 	left: 100px;
 	bottom: 0px;
+	width:22%;
 }
 .contact-me {
 	position: absolute;
 	left: 100px;
 	bottom: 200px;
+	width:32%;
 }
 .credit {
 	position: absolute;
@@ -418,3 +426,76 @@ body {
 	color: #219793;
 }
 /* FOOTER STYLES END */
+@media (max-width: 1340px) {
+
+	.container {
+		width:93.0%;
+	}
+
+	/* HEADER MEDIA QUERIES BEGIN */
+
+	img.laptop-man {
+		height: 50%;
+	}
+
+	.header-text {
+		position: relative;
+		left: 5%;
+		top: 5%;
+	}
+	/* HEADER MEDIA QUERIES END */
+	.about-section {
+		width:100%;
+	}
+	.carousel-main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.carousel-main p {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.group-silhouette {
+		display: none;
+	}
+
+	.gallery-item {
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+
+
+	/* FOOTER MEDIA QUERIES BEGIN */
+	.footer-info i {
+	
+		padding: 5px;
+		font-size: 1.5rem;
+	
+	}
+	.footer-icon .text {
+		font-size:1rem;
+	}
+	.programmer {
+		display: none;
+	}
+	.credit {
+		display: none;
+	}
+	.contact-me {
+		display: none;
+	}
+	.footer-info .icon{
+		display: none;
+	}
+	.footer:before {
+		display:none;
+	}
+	.contacts {
+		top: 10%;
+	}
+	/* FOOTER MEDIA QUERIES END */
+}

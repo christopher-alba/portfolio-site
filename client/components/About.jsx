@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { updateNav } from '../actions/index'
 import VisibilitySensor from 'react-visibility-sensor'
 import { animated } from 'react-spring/renderprops'
+import { Icon } from 'semantic-ui-react'
 let aboutMe = [
   `My passion for software development began during my first year of engineering. Since then, I have studied software outside of university and am currently exploring the world of web development. I really enjoy the learning and satisfaction that come from building and completing software projects and is one of the reasons I have chosen this career path. `,
   `I am currently enrolled in a bachelors of engineering (honors) in Computer Systems Engineering at the University of Auckland. I am currently in the second year of engineering and will graduate in 2022 if all goes well. In this degree, we learn about electronics, hardware, and software, and how these work together.`
@@ -44,7 +45,7 @@ render () {
               className={`arrows ${
                 this.state.currentIndex > 0 ? `visible` : `hidden`
               }`}>
-              <i className='fas fa-arrow-circle-left'></i>
+              <Icon name = "angle left"/>
             </div>
             <p>{aboutMe[this.state.currentIndex]}</p>
             <div
@@ -54,7 +55,7 @@ render () {
                   ? `visible`
                   : `hidden`
               }`}>
-              <i className='fas fa-arrow-circle-right'></i>
+              <Icon name = "angle right"/>
             </div>
           </div>
           <div className='carousel-index'>

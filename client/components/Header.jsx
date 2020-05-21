@@ -29,7 +29,7 @@ class Header extends Component {
             to={{ transform: 'translateX(0px)', opacity: 1 }}>
             {props => (
               <h1 style={props} className='name'>
-    CHRISTOPHER ALBA
+    CHRISTOPHER SY ALBA
               </h1>
             )}
           </Spring>
