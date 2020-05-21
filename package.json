@@ -41,9 +41,7 @@
     "react-visibility-sensor": "^5.1.1",
     "redux": "^4.0.5",
     "semantic-ui-react": "^0.88.2",
-    "superagent": "^5.2.2"
-  },
-  "devDependencies": {
+    "superagent": "^5.2.2",
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
@@ -52,14 +50,16 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^25.2.6",
     "babel-loader": "^8.1.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "jest": "^25.2.7",
-    "nodemon": "^2.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^25.2.7",
+    "nodemon": "^2.0.2",
   }
 }
