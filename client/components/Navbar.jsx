@@ -11,8 +11,9 @@ toggleNav = (bool) => {
   let display = !this.state.display
   if (bool === true || bool === false) {
     this.setState({ navDisplay: bool })
+  } else {
+    this.setState({ display })
   }
-  this.setState({ display })
 }
 componentDidMount () {
   var prevScrollpos = window.pageYOffset
