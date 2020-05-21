@@ -2,7 +2,10 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background: #219793 !important;
+	background-image: url(./images/ocean_hideout_1.png) !important;
+	background-repeat: no-repeat  !important;
+	background-size: cover  !important;
+	background-attachment: fixed  !important;
 	height: 100vh;
 }
 .div {
@@ -16,10 +19,10 @@ body {
 	content: '';
 	height: 13%;
 	width: 130vw;
-	background: white;
+	background: rgba(255, 255, 255, 1);
 	position: absolute;
 	top: -100px;
-	left: 0px;
+	left: -50px;
 	bottom: 0px;
 	transform: rotate(-5deg);
 	z-index: 0;
@@ -30,10 +33,10 @@ body {
 	content: '';
 	height: 80%;
 	width: 130vw;
-	background: white;
+	background: rgba(255, 255, 255, 1);
 	position: absolute;
 	top: -150px;
-	left: 0px;
+	left: -50px;
 	bottom: 0px;
 	transform: rotate(-5deg);
 	z-index: 0;
@@ -44,7 +47,7 @@ body {
 .footer {
 	position: relative;
 	z-index: 1;
-	background: white;
+	background: rgba(255, 255, 255, 1);
 	min-height: 30vh;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -54,10 +57,10 @@ body {
 	content: '';
 	height: 300px;
 	width: 130vw;
-	background: white;
+	background: rgba(255, 255, 255, 1);
 	position: absolute;
 	bottom: 0;
-	left: 0px;
+	left: -50px;
 	top: 95%;
 	transform: rotate(6deg);
 	border: none;
@@ -128,21 +131,16 @@ body {
 }
 .toggler:hover,
 .toggler-active {
-	color: #3cbe9e;
+	color: orangered;
 }
 .current-location {
-	color: #3cbe9e;
+	color: orangered;
 }
 /* NAVBAR STYLES END */
 /* HEADER STYLES BEGIN */
 .header {
 	height: 70vh;
 	width: 100%;
-	background-image: url(./images/meditation-header.png);
-	background-repeat: no-repeat;
-	background-position-x: 0;
-	background-position-y: 0;
-	background-size: cover;
 }
 .laptop-man {
 	position: absolute;
@@ -169,6 +167,7 @@ body {
 }
 .header-text .profession {
 	font-style: italic;
+	color:orangered;
 	font-size: 1.5rem;
 }
 
@@ -227,7 +226,7 @@ body {
 }
 .about-section h1 {
 	text-align: center;
-	color: #219793;
+	color: orangered;
 	font-weight: 700;
 	font-family: 'Segoe UI' !important;
 }
@@ -271,12 +270,12 @@ body {
 /* PERSONAL STYLES BEGIN */
 .personal {
 	position: relative;
-	margin-top: 10%;
+	
 	overflow-x: hidden;
 }
 .personal h1 {
 	text-align: left;
-	color: #219793;
+	color: orangered;
 	font-weight: 700;
 	font-family: 'Segoe UI' !important;
 	font-size: 2.5rem;
@@ -337,9 +336,9 @@ body {
 	border: 1px solid lightgray;
 }
 .group .ui.button {
-	background: #219793;
-	color: #6ecfcc;
-	border: 1px solid #6ecfcc;
+	color: white;
+	border: 1px solid white;
+	background: none;
 }
 /* PERSONAL STYLES END */
 /* GROUP STYLES BEGIN */
@@ -355,7 +354,6 @@ body {
 	font-size: 2.5rem;
 	font-weight: 700;
 	font-family: 'Segoe UI' !important;
-	background: #219793;
 	position: sticky;
 	top: 0px;
 }
@@ -424,7 +422,7 @@ body {
 	font-size: 1.5rem;
 	font-weight: 700;
 	font-family: 'Segoe UI' !important;
-	color: #219793;
+	color: orangered;
 }
 /* FOOTER STYLES END */
 @media (max-width: 1340px) {
@@ -446,7 +444,8 @@ body {
 	}
 	/* HEADER MEDIA QUERIES END */
 	.about-section {
-		width:100%;
+		width:90%;
+		top:0px;
 	}
 	.carousel-main {
 		display: flex;
@@ -459,7 +458,9 @@ body {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-
+	.personal{
+		margin-top: 10%;
+	}
 	.group-silhouette {
 		display: none;
 	}
