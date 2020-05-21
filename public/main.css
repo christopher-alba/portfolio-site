@@ -288,6 +288,7 @@ body {
 	width:fit-content;
 }
 .gallery-item {
+	width: 350px;
 	min-width: 250px;
 	max-width: 650px;
 	margin-left: 0;
