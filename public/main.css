@@ -95,6 +95,12 @@ body {
 }
 /* GENERAL STYLES END */
 /* NAVBAR STYLES START */
+@media (max-width: 500px) {
+	.navbar {
+		position: sticky;
+		top: 0px;
+	}
+}
 .navbar {
 	position: fixed;
 	top: 0px;
@@ -106,7 +112,7 @@ body {
 .navbar > div {
 	height: 50px;
 	width: 50px;
-	background: black;
+	background: rgba(0, 0, 0, 0.664);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -425,22 +431,28 @@ body {
 	color: orangered;
 }
 /* FOOTER STYLES END */
+
+/* SMALL SCREENS | TABLETS */
+
+
 @media (max-width: 1340px) {
 
 	.container {
-		width:93.0%;
+		width:80.0%;
 	}
 
 	/* HEADER MEDIA QUERIES BEGIN */
 
 	img.laptop-man {
-		height: 50%;
+		height:50vw;
+		max-height: 50%;
 	}
 
 	.header-text {
 		position: relative;
-		left: 5%;
-		top: 5%;
+		left: 10%;
+		top: 23%;
+		width:90%;
 	}
 	/* HEADER MEDIA QUERIES END */
 	.about-section {
@@ -498,9 +510,85 @@ body {
 	/* FOOTER MEDIA QUERIES END */
 }
 
+
+/* SMALL MOBILE DEVICES */
+
+
 @media (max-width: 500px) {
 	.gallery-item {
 		margin-top: 0px;
 		margin-right: 0px;
 	}
+	.container {
+		width:93.0%;
+	}
+
+	/* HEADER MEDIA QUERIES BEGIN */
+
+	img.laptop-man {
+		height: 30%;
+	}
+
+	.header-text {
+		position: relative;
+		width:fit-content;
+		margin: 0 auto 0 auto;
+		left: 0;
+		top: 30%;
+		text-align: left;
+	}
+	/* HEADER MEDIA QUERIES END */
+	.about-section {
+		width:90%;
+		top:0px;
+	}
+	.carousel-main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.carousel-main p {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.personal{
+		margin-top: 10%;
+	}
+	.group-silhouette {
+		display: none;
+	}
+
+
+
+	/* FOOTER MEDIA QUERIES BEGIN */
+	.footer-info i {
+	
+		padding: 5px;
+		font-size: 1.5rem;
+	
+	}
+	.footer-icon .text {
+		font-size:1rem;
+	}
+	.programmer {
+		display: none;
+	}
+	.credit {
+		display: none;
+	}
+	.contact-me {
+		display: none;
+	}
+	.footer-info .icon{
+		display: none;
+	}
+	.footer:before {
+		display:none;
+	}
+	.contacts {
+		top: 10%;
+	}
+	/* FOOTER MEDIA QUERIES END */
 }
