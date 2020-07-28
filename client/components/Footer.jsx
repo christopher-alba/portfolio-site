@@ -21,7 +21,7 @@ class Footer extends Component {
 	        <div className='contacts'>
 	          <div className='footer-info'>
 	            <div className='text'>
-	              <strong>NZ MOBILE </strong>+64 - 021 1711 211
+	              <strong>NZ MOBILE </strong> +64 - 210 817 3338
 	            </div>
 	            <div className='icon'>
 	              <i className='fas fa-mobile'></i>
