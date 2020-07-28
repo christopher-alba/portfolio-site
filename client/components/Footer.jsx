@@ -31,7 +31,7 @@ class Footer extends Component {
 	            <div className='text'>
 	              <a href='mailto:albasychris@gmail.com'>
 	                <button className='ui button blue'>
-	                  <strong>EMAIL </strong> albasychris@gmail.com
+	                  <strong>EMAIL </strong> chris.alba.dev@gmail.com
 	                </button>
 	              </a>
 	            </div>
