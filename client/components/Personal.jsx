@@ -102,6 +102,26 @@ let personalProjects = [
       'Mobile',
       'eCommerce'
     ]
+  },
+  {
+    title: 'Tourism Site',
+    imgUrl:'./images/tourismNZ.png',
+    description: 'This project is an extension of the project AoteaWoah that I did during the Summer of Tech Create Camp 2020. It is designed to help boost local tourism in NZ and uses a weather API aswell as the google maps API.' ,
+    href: 'https://christopher-alba.github.io/AdventureNZ/?#/' ,
+    tags: [
+      'HTML',
+      'CSS',
+      'Javascript',
+      'React.js',
+      'React-Redux',
+      'Semantic-UI-React',
+      'Desktop',
+      'Mobile',
+      'Weather API',
+      'Google Maps API'
+    ]
+
+
   }
 ]
 class Personal extends Component {
