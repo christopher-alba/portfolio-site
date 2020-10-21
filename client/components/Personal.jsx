@@ -122,6 +122,25 @@ let personalProjects = [
     ]
 
 
+  },
+  {
+    title: 'Binary Options Manager',
+    imgUrl: './images/financialPlanner.png',
+    description: 'An app that helps users manage their binary options trading by manually inputing trades and calculating how many successful trades they need to do at minimum.',
+    href: 'https://binaryoptions.herokuapp.com/#/',
+    tags: [
+      'HTML',
+      'CSS',
+      'Javascript',
+      'React.js',
+      'React-Redux',
+      'React-Bootstrap',
+      'Desktop',
+      'Passport.js',
+      'Node.js',
+      'Express.js',
+      'Knex.js'
+    ]
   }
 ]
 class Personal extends Component {
